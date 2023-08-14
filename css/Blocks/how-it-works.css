@@ -1,0 +1,147 @@
+.how-it-works{
+    padding: 170px 0 51px 0;
+}
+
+
+.how-it-works-header{
+    display: flex;
+    padding-bottom: 52px;
+}
+
+.how-it-works-header-head{
+    max-width: 584px;
+    margin-right: 125px;
+}
+
+.how-it-works-title{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 157%;
+    margin-bottom: -3px;
+}
+
+.how-it-works-subtitle{
+    color: #01996D;
+    font-family: 'Georgia';
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 157%;
+}
+
+
+.how-it-works-content{
+    max-width: 671px;
+    font-weight: 500;
+    line-height: 150%;
+    padding: 58px  0 15px 0;
+
+}
+
+.how-it-works-steps{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, 390px);
+   column-gap: 95px;
+}
+
+
+.step{
+    max-width: 390px;
+}
+
+.step:nth-child(2){
+    margin-top: 287px;
+}
+
+.step:nth-child(3){
+    margin-top: 54px;
+}
+
+.step-heading::before{
+    content: attr(data-number);
+    font-weight: 400;
+    font-size: 150px;
+    line-height: 150%;
+    color: rgba(1, 153, 109, 0.2);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.step-heading{
+    padding: 135px 0 0 88px;
+    font-family: 'Georgia';
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 150%;
+    color: #000000;
+    margin-bottom: 55px;
+    position: relative;
+
+}
+
+.step-text{
+    line-height: 150%;
+    font-weight: 500;
+    margin-bottom: 60px;
+}
+
+.step-img-wrapper{
+    position: relative;
+    background-color: cadetblue;
+    padding-bottom: 126%;
+    border-radius: 8px;
+}
+
+.step-img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+@media(max-width:1399px){
+    .how-it-works {
+        padding: 80px 0 60px 0;
+    }
+
+    .how-it-works-header {
+        flex-direction: column;
+        padding-bottom: 52px;
+    }
+
+    .how-it-works-subtitle {
+        font-size: 30px;
+        line-height: 130%;
+    }
+
+    
+.how-it-works-content {
+    padding: 20px 0 0px 0;
+}
+}
+
+@media(max-width:1392px){
+    .step:nth-child(3), .step:nth-child(2) {
+         margin-top: 0px;
+    }
+}
+
+
+/* @media(max-width:419px){
+    .how-it-works-steps {
+        grid-template-columns: 1fr;
+    }
+} */  /* Альтернатива FlexBox для разришения меньше 419px.  */
+
+
+@media(max-width:906px){
+    .how-it-works-steps {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}  /* Распологает карточки по центру от разрешения 906px. Для разрешения более 906px работает Grid сетка. */
